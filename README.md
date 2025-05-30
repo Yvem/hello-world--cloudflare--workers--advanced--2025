@@ -1,6 +1,10 @@
-# hello-world--clerk--hosted--2025
+# hello-world--cloudflare--workers--advanced--2025
 
-https://clerk.com/pricing
+- using hono
+- pre-built
+- auth
+- DB
+- durable object?
+  
 
 
-See also Auth.js
