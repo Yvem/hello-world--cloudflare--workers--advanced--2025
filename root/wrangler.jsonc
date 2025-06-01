@@ -19,7 +19,7 @@
    * no_bundle
    * https://developers.cloudflare.com/workers/wrangler/configuration/#custom-builds
    */
-  "main": "src/index.ts",
+  "main": "src/index.js",
 
 
   /**
@@ -29,7 +29,9 @@
  */
   "assets": {
     "directory": "./public/",
-    "not_found_handling": "404-page"
+    //"html_handling": "none", // no rewrites, we handle it ourselves
+    "not_found_handling": "none", // NO if we serve an API, no files = should go to the worker
+    "binding": "ASSETS"
   }
 
 
