@@ -12,3 +12,7 @@ Cloudflare differentiate browser navigation and fetches, and applies `not_found_
 ```
 [wrangler:info] GET /foo 404 Not Found (5ms) `Sec-Fetch-Mode: navigate` header present - using `not_found_handling` behavior
 ```
+
+
+* https://developers.cloudflare.com/workers/
+* https://developers.cloudflare.com/workers/examples/
