@@ -1,0 +1,28 @@
+meta {
+  name: error
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{host}}/test-error-handling?mode=non-stringifiable-body
+  body: none
+  auth: inherit
+}
+
+params:query {
+  mode: non-stringifiable-body
+  ~mode: assertion-sync
+  ~mode: throw-sync
+  ~mode: throw-sync-non-error
+  ~mode: throw-async
+  ~mode: timeout
+  ~mode: rejection
+  ~mode: unhandled-rejection
+  ~mode: foo
+  ~mode: manual
+  ~mode: bad-status-code
+  ~mode: non-json-stringified-body
+  ~mode: non-stringified-body
+  ~mode: no-response-set
+}
